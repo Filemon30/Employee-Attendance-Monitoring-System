@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hide browser scrollbars globally */
+html, body {
+  overflow: hidden !important;
+}
+
+/* Keep scroll behavior on custom content areas */
+.content-scrollable {
+  overflow-y: auto;
+}
+
+/* Hide webkit scrollbar visually */
+::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Hide tooltip/bubble labels for collapsed mobile sider menu */
+@media (max-width: 768px) {
+  .ant-tooltip {
+    display: none !important;
+  }
+}
